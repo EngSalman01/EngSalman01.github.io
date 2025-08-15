@@ -334,11 +334,11 @@ main {
 .avatar-box {
   /* Frame styling */
   padding: 8px;
-  background: linear-gradient(135deg, #f5f7fa00 0%, #e4e8f000 100%);
+  background: linear-gradient(135deg, #f5f7fa60 0%, #e4e8f05e 100%);
   border-radius: 16px;
   box-shadow: 
     0 4px 8px rgba(0,0,0,0.05),
-    inset 0 0 0 1px rgba(0, 0, 0, 0);
+    inset 0 0 0 1px rgba(255, 255, 255, 0.345);
   display: inline-block;
   transition: all 0.3s ease;
 }
@@ -348,7 +348,7 @@ main {
   border-radius: 12px;
   border: 1px solid rgba(0,0,0,0.05);
   display: block;
-  background-color: #00000000;
+  background-color: #ffffff1a;
 }
 
 /* Optional hover effect */
@@ -356,7 +356,7 @@ main {
   transform: scale(1.02);
   box-shadow: 
     0 6px 12px rgba(0,0,0,0.08),
-    inset 0 0 0 1px rgba(0, 0, 0, 0);
+    inset 0 0 0 1px rgba(255, 255, 255, 0.327);
 }
 
 .info-content .name {
