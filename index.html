@@ -7,21 +7,17 @@
     <title>Salman Almnaseer - Personal Portfolio</title>
 
     <!-- Favicon -->
-    <link
-      rel="shortcut icon"
-      href=""
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-    
+
     <style>
       /* Certificate Section Styles */
       .certificates-section {
         margin-top: 40px;
       }
-      
+
       .certificates-title {
         font-size: 1.8rem;
         margin-bottom: 20px;
@@ -29,7 +25,7 @@
         position: relative;
         padding-bottom: 10px;
       }
-      
+
       .certificates-title::after {
         content: "";
         position: absolute;
@@ -39,13 +35,13 @@
         height: 3px;
         background: #f59e0b;
       }
-      
+
       .certificates-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
         gap: 20px;
       }
-      
+
       .certificate-card {
         background: rgba(255, 255, 255, 0.05);
         border-radius: 10px;
@@ -54,51 +50,51 @@
         cursor: pointer;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       }
-      
+
       .certificate-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         background: rgba(255, 255, 255, 0.08);
       }
-      
+
       .certificate-img {
         height: 180px;
         overflow: hidden;
       }
-      
+
       .certificate-img img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         transition: transform 0.5s ease;
       }
-      
+
       .certificate-card:hover .certificate-img img {
         transform: scale(1.05);
       }
-      
+
       .certificate-content {
         padding: 15px;
       }
-      
+
       .certificate-title {
         font-size: 1.1rem;
         margin-bottom: 5px;
         color: #fff;
       }
-      
+
       .certificate-org {
         color: #f59e0b;
         font-size: 0.9rem;
         margin-bottom: 8px;
         display: block;
       }
-      
+
       .certificate-date {
         color: #94a3b8;
         font-size: 0.85rem;
       }
-      
+
       /* Modal Styles */
       .certificate-modal {
         position: fixed;
@@ -115,25 +111,25 @@
         visibility: hidden;
         transition: all 0.3s ease;
       }
-      
+
       .certificate-modal.active {
         opacity: 1;
         visibility: visible;
       }
-      
+
       .modal-content {
         position: relative;
         max-width: 90%;
         max-height: 90%;
       }
-      
+
       .modal-content img {
         max-width: 100%;
         max-height: 80vh;
         border-radius: 10px;
         box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
       }
-      
+
       .close-btn {
         position: absolute;
         top: -40px;
@@ -143,7 +139,7 @@
         cursor: pointer;
         transition: color 0.3s;
       }
-      
+
       .close-btn:hover {
         color: #f59e0b;
       }
@@ -485,28 +481,39 @@
               </li>
             </ul>
           </section>
-          
+
           <!-- NEW: Certificate Section -->
           <section class="certificates-section">
             <h3 class="h3 certificates-title">Certificates</h3>
-            
-            <div class="certificates-grid">
-              <!-- Certificate 1 -->
-              <div class="certificate-card" data-certificate="ai">
-                <div class="certificate-img">
-                  <img src="./assets/images/uni-certificate.jpg" alt="Bachelor's in Software Engineering and Management Certificate">
-                </div>
-                <div class="certificate-content">
-                  <h4 class="certificate-title">Bachelor's in Software Engineering and Management</h4>
-                  <span class="certificate-org">Nanjing University of Aeronautics and Astronautics</span>
-                  <span class="certificate-date">June 2024</span>
+
+                <!-- Certificate 1 -->
+                <div class="certificate-card">
+                  <div class="certificate-img">
+                    
+                    <img
+                      src="./assets/certificates/uni-certificate.jpg"
+                      alt="Software Engineering Degree Certificate"
+                    />
+                  </div>
+                  <div class="certificate-content">
+                    <h4 class="certificate-title">
+                      Bachelor's in Software Engineering
+                    </h4>
+                    <span class="certificate-org"
+                      >Nanjing University of Aeronautics and Astronautics</span
+                    >
+                    <span class="certificate-date">June 2024</span>
+                  </div>
                 </div>
               </div>
-              
+
               <!-- Certificate 2 -->
               <div class="certificate-card" data-certificate="python">
                 <div class="certificate-img">
-                  <img src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Python Certificate">
+                  <img
+                    src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+                    alt="Python Certificate"
+                  />
                 </div>
                 <div class="certificate-content">
                   <h4 class="certificate-title">Python Programming</h4>
@@ -514,11 +521,14 @@
                   <span class="certificate-date">December 2020</span>
                 </div>
               </div>
-              
+
               <!-- Certificate 3 -->
               <div class="certificate-card" data-certificate="java">
                 <div class="certificate-img">
-                  <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Java Certificate">
+                  <img
+                    src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+                    alt="Java Certificate"
+                  />
                 </div>
                 <div class="certificate-content">
                   <h4 class="certificate-title">Java Development</h4>
@@ -526,11 +536,14 @@
                   <span class="certificate-date">April 2021</span>
                 </div>
               </div>
-              
+
               <!-- Certificate 4 -->
               <div class="certificate-card" data-certificate="cpp">
                 <div class="certificate-img">
-                  <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="C++ Certificate">
+                  <img
+                    src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+                    alt="C++ Certificate"
+                  />
                 </div>
                 <div class="certificate-content">
                   <h4 class="certificate-title">C++ Programming</h4>
@@ -684,12 +697,12 @@
         </article>
       </div>
     </main>
-    
+
     <!-- Certificate Modal -->
     <div class="certificate-modal" id="certificateModal">
       <div class="modal-content">
         <span class="close-btn" id="closeModal">&times;</span>
-        <img id="modalCertificateImage" src="" alt="Certificate">
+        <img id="modalCertificateImage" src="" alt="Certificate" />
       </div>
     </div>
 
@@ -744,43 +757,43 @@
           }
         });
       }
-      
+
       // Certificate functionality
-      document.addEventListener('DOMContentLoaded', function() {
-        const modal = document.getElementById('certificateModal');
-        const modalImage = document.getElementById('modalCertificateImage');
-        const closeBtn = document.getElementById('closeModal');
-        const certCards = document.querySelectorAll('.certificate-card');
-        
+      document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("certificateModal");
+        const modalImage = document.getElementById("modalCertificateImage");
+        const closeBtn = document.getElementById("closeModal");
+        const certCards = document.querySelectorAll(".certificate-card");
+
         // Open modal when certificate is clicked
-        certCards.forEach(card => {
-          card.addEventListener('click', function() {
-            const imgSrc = this.querySelector('img').src;
+        certCards.forEach((card) => {
+          card.addEventListener("click", function () {
+            const imgSrc = this.querySelector("img").src;
             modalImage.src = imgSrc;
-            modal.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Prevent scrolling
+            modal.classList.add("active");
+            document.body.style.overflow = "hidden"; // Prevent scrolling
           });
         });
-        
+
         // Close modal
-        closeBtn.addEventListener('click', function() {
-          modal.classList.remove('active');
-          document.body.style.overflow = 'auto'; // Enable scrolling
+        closeBtn.addEventListener("click", function () {
+          modal.classList.remove("active");
+          document.body.style.overflow = "auto"; // Enable scrolling
         });
-        
+
         // Close modal when clicking outside the image
-        modal.addEventListener('click', function(e) {
+        modal.addEventListener("click", function (e) {
           if (e.target === modal) {
-            modal.classList.remove('active');
-            document.body.style.overflow = 'auto';
+            modal.classList.remove("active");
+            document.body.style.overflow = "auto";
           }
         });
-        
+
         // Close modal with Escape key
-        document.addEventListener('keydown', function(e) {
-          if (e.key === 'Escape' && modal.classList.contains('active')) {
-            modal.classList.remove('active');
-            document.body.style.overflow = 'auto';
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && modal.classList.contains("active")) {
+            modal.classList.remove("active");
+            document.body.style.overflow = "auto";
           }
         });
       });
