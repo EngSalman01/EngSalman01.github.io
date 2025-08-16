@@ -1,563 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Salman Almnaseer - Personal Portfolio</title>
-
-    <!-- Favicon -->
-    <link
-      rel="shortcut icon"
-      href=""
-      type="image/x-icon"
-    />
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-
-  <body>
-    <main>
-      <!-- Sidebar -->
-      <aside class="sidebar" data-sidebar>
-        <div class="sidebar-info">
-          <figure
-            class="avatar-box"
-            style="
-              border-radius: 50%;
-              overflow: hidden;
-              width: 90px;
-              height: 90px;
-            "
-          >
-            <img
-              src="./assets/images/my-avatar.png"
-              alt="Salman Almnaseer"
-              style="
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                display: block;
-              "
-            />
-          </figure>
-
-          <div class="info-content">
-            <h1 class="name" title="Salman Almnaseer">Salman Almnaseer</h1>
-            <p class="title">Software Engineer</p>
-          </div>
-
-          <button class="info_more-btn" data-sidebar-btn>
-            <span>Show Contacts</span>
-            <ion-icon name="chevron-down"></ion-icon>
-          </button>
-        </div>
-
-        <div class="sidebar-info_more">
-          <div class="separator"></div>
-
-          <ul class="contacts-list">
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div>
-              <div class="contact-info">
-                <p class="contact-title">Email</p>
-                <a href="mailto:eng.salman01@outlook.com" class="contact-link"
-                  >eng.salman01@outlook.com</a
-                >
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="phone-portrait-outline"></ion-icon>
-              </div>
-              <div class="contact-info">
-                <p class="contact-title">Phone</p>
-                <a href="tel:+966555339782" class="contact-link"
-                  >+966 55 533 9782</a
-                >
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="calendar-outline"></ion-icon>
-              </div>
-              <div class="contact-info">
-                <p class="contact-title">Birthday</p>
-                <time datetime="2001-01-23">Jan 23, 2001</time>
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="location-outline"></ion-icon>
-              </div>
-              <div class="contact-info">
-                <p class="contact-title">Location</p>
-                <address>Eastern Province, Saudi Arabia</address>
-              </div>
-            </li>
-          </ul>
-
-          <div class="separator"></div>
-
-          <ul class="social-list">
-            <li class="social-item">
-              <a
-                href="https://www.linkedin.com/in/salmanrafid/"
-                class="social-link"
-                target="_blank"
-              >
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a>
-            </li>
-            <li class="social-item">
-              <a
-                href="https://github.com/EngSalman01"
-                class="social-link"
-                target="_blank"
-              >
-                <ion-icon name="logo-github"></ion-icon>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </aside>
-
-      <!-- Main Content -->
-      <div class="main-content">
-        <!-- Navbar -->
-        <nav class="navbar">
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <button
-                class="navbar-link active"
-                data-nav-link
-                onclick="showPage('about')"
-              >
-                About
-              </button>
-            </li>
-            <li class="navbar-item">
-              <button
-                class="navbar-link"
-                data-nav-link
-                onclick="showPage('resume')"
-              >
-                Resume
-              </button>
-            </li>
-            <li class="navbar-item">
-              <button
-                class="navbar-link"
-                data-nav-link
-                onclick="showPage('portfolio')"
-              >
-                Portfolio
-              </button>
-            </li>
-            <li class="navbar-item">
-              <button
-                class="navbar-link"
-                data-nav-link
-                onclick="showPage('contact')"
-              >
-                Contact
-              </button>
-            </li>
-          </ul>
-        </nav>
-
-        <!-- About Page -->
-        <article class="about active" data-page="about">
-          <header>
-            <h2 class="h2 article-title">About me</h2>
-          </header>
-
-          <section class="about-text">
-            <p>
-              A recent Software Engineering graduate with a strong foundation in
-              AI, deep learning, and full-stack development. I have hands-on
-              experience in building intelligent systems, web applications, and
-              mobile solutions through academic projects and self-driven
-              learning.
-            </p>
-            <p>
-              I'm currently seeking job opportunities where I can apply my
-              skills in Python, JavaScript, database optimization, and AI model
-              development to create impactful software solutions. My goal is to
-              contribute to innovative projects, grow within a dynamic team, and
-              continue expanding my technical expertise.
-            </p>
-          </section>
-
-          <!-- Services -->
-          <section class="service">
-            <h3 class="h3 service-title">What I Offer</h3>
-            <ul class="service-list">
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-web.svg"
-                    alt="Web Dev"
-                    width="40"
-                  />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salman Almnaseer - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --accent: #f59e0b;
+            --light: #f1f5f9;
+            --dark: #0f172a;
+            --gray: #94a3b8;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1e3a8a, #0f172a);
+            color: var(--light);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 40px;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .logo span {
+            color: var(--accent);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        
+        nav a {
+            color: var(--gray);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 8px 15px;
+            border-radius: 30px;
+        }
+        
+        nav a:hover, nav a.active {
+            color: white;
+            background: rgba(37, 99, 235, 0.2);
+        }
+        
+        .profile-card {
+            background: rgba(30, 41, 59, 0.8);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .avatar-container {
+            flex-shrink: 0;
+        }
+        
+        .avatar-box {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid var(--accent);
+            box-shadow: 0 0 30px rgba(245, 158, 11, 0.4);
+            transition: all 0.3s ease;
+        }
+        
+        .avatar-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 40px rgba(245, 158, 11, 0.6);
+        }
+        
+        .avatar-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .profile-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+        
+        .profile-info .title {
+            font-size: 1.3rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+        
+        .profile-info p {
+            margin-bottom: 20px;
+            color: var(--gray);
+            max-width: 600px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            margin-left: 15px;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: white;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+        
+        .certificates-section {
+            background: rgba(30, 41, 59, 0.8);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .cert-card {
+            background: rgba(15, 23, 42, 0.5);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .cert-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(245, 158, 11, 0.3);
+        }
+        
+        .cert-img {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .cert-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .cert-card:hover .cert-img img {
+            transform: scale(1.05);
+        }
+        
+        .cert-content {
+            padding: 20px;
+        }
+        
+        .cert-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+        
+        .cert-org {
+            color: var(--accent);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .cert-date {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .modal-content {
+            position: relative;
+            max-width: 90%;
+            max-height: 90%;
+        }
+        
+        .modal-content img {
+            max-width: 100%;
+            max-height: 80vh;
+            border-radius: 10px;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        
+        .close-btn:hover {
+            color: var(--accent);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: var(--gray);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .profile-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-info .buttons {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .btn-outline {
+                margin-left: 0;
+            }
+            
+            nav ul {
+                gap: 10px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Salman<span>Dev</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="profile-card">
+            <div class="avatar-container">
+                <div class="avatar-box">
+                    <img src="https://ui-avatars.com/api/?name=Salman+Almnaseer&background=0D8ABC&color=fff&size=400" alt="Salman Almnaseer">
                 </div>
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Web Development</h4>
-                  <p class="service-item-text">
-                    Building modern, responsive, and user-friendly websites
-                    using up-to-date frameworks and tools.
-                  </p>
-                </div>
-              </li>
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-app.svg"
-                    alt="Mobile apps"
-                    width="40"
-                  />
-                </div>
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Mobile Apps</h4>
-                  <p class="service-item-text">
-                    Currently training in Flutter/React Native to build
-                    cross-platform mobile apps while studying UI design patterns
-                    and performance optimization methods.
-                  </p>
-                </div>
-              </li>
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img src="./assets/images/icon-dev.svg" alt="AI" width="40" />
-                </div>
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">AI & Deep Learning</h4>
-                  <p class="service-item-text">
-                    Developing AI-powered solutions, computer vision systems,
-                    and YOLO-based detection models.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </section>
-        </article>
-
-        <!-- Resume Page -->
-        <article class="resume" data-page="resume" style="display: none">
-          <header>
-            <h2 class="h2 article-title">Resume</h2>
-          </header>
-
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-              <h3 class="h3">Education</h3>
             </div>
-
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Nanjing University of Aeronautics and Astronautics
-                </h4>
-                <span>2020 — 2024</span>
-                <p class="timeline-text">
-                  Bachelor's in Software Engineering and Management
-                </p>
-              </li>
-            </ol>
-          </section>
-
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-              <h3 class="h3">Experience</h3>
+            
+            <div class="profile-info">
+                <h1>Salman Almnaseer</h1>
+                <p class="title">Software Engineer & AI Specialist</p>
+                <p>I build intelligent systems and high-performance applications with cutting-edge technologies. Passionate about solving complex problems through innovative software solutions.</p>
+                <div class="buttons">
+                    <a href="#" class="btn">Download CV</a>
+                    <a href="#certificates" class="btn btn-outline">View Certificates</a>
+                </div>
             </div>
-
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Thesis AI Research</h4>
-                <span>2023 — 2024</span>
-                <p class="timeline-text">
-                  Developed a computer vision pipeline using YOLO-X and Faster
-                  R-CNN, achieving 94% defect classification accuracy.
-                </p>
-              </li>
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">HomeEditor</h4>
-                <span>2022</span>
-                <p class="timeline-text">
-                  Created a drag-and-drop home designer with JavaScript/HTML5
-                  Canvas.
-                </p>
-              </li>
-            </ol>
-          </section>
-
-          <section class="skill">
-            <h3 class="h3 skills-title">My Skills</h3>
-            <ul class="skills-list content-card">
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Python</h5>
-                  <data value="70">70%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 70%"></div>
-                </div>
-              </li>
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">AI & Machine Learning</h5>
-                  <data value="55">55%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 55%"></div>
-                </div>
-              </li>
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Web Development</h5>
-                  <data value="60">60%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 60%"></div>
-                </div>
-              </li>
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Mobile Development</h5>
-                  <data value="30">30%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 30%"></div>
-                </div>
-              </li>
-            </ul>
-          </section>
-        </article>
-
-        <!-- Portfolio Page -->
-        <article class="portfolio" data-page="portfolio" style="display: none">
-          <header>
-            <h2 class="h2 article-title">Portfolio</h2>
-          </header>
-
-          <section class="projects">
-            <ul class="filter-list">
-              <li class="filter-item">
-                <button
-                  class="active"
-                  data-filter-btn
-                  onclick="filterProjects('all')"
-                >
-                  All
-                </button>
-              </li>
-              <li class="filter-item">
-                <button data-filter-btn onclick="filterProjects('ai')">
-                  AI Projects
-                </button>
-              </li>
-              <li class="filter-item">
-                <button data-filter-btn onclick="filterProjects('web')">
-                  Web Development
-                </button>
-              </li>
-              <li class="filter-item">
-                <button data-filter-btn onclick="filterProjects('mobile')">
-                  Mobile Apps
-                </button>
-              </li>
-            </ul>
-
-            <ul class="project-list">
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="ai"
-              >
-                <a
-                  href="https://github.com/EngSalman01/Bridge-Defect-Detection"
-                  target="_blank"
-                >
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
+        </div>
+        
+        <section id="certificates" class="certificates-section">
+            <h2 class="section-title">My Certificates</h2>
+            
+            <div class="cert-grid">
+                <!-- Certificate 1 -->
+                <div class="cert-card">
+                    <div class="cert-img">
+                        <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="AI Certificate">
                     </div>
-                    <img
-                      src="./assets/images/bridge-project.jpg"
-                      alt="Bridge Defect Detection"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">Bridge Defect Detection System</h3>
-                  <p class="project-category">Deep Learning Project</p>
-                </a>
-              </li>
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web"
-              >
-                <a
-                  href="https://github.com/EngSalman01/HomeEditor"
-                  target="_blank"
-                >
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Artificial Intelligence</h3>
+                        <span class="cert-org">LinkedIn Learning</span>
+                        <span class="cert-date">March 2024</span>
                     </div>
-                    <img
-                      src="./assets/images/home-editor.jpg"
-                      alt="HomeEditor"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">HomeEditor</h3>
-                  <p class="project-category">Web Application</p>
-                </a>
-              </li>
-            </ul>
-          </section>
-        </article>
+                </div>
+                
+                <!-- Certificate 2 -->
+                <div class="cert-card">
+                    <div class="cert-img">
+                        <img src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Python Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Python Programming</h3>
+                        <span class="cert-org">Udemy</span>
+                        <span class="cert-date">December 2020</span>
+                    </div>
+                </div>
+                
+                <!-- Certificate 3 -->
+                <div class="cert-card">
+                    <div class="cert-img">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Java Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Java Development</h3>
+                        <span class="cert-org">Udemy</span>
+                        <span class="cert-date">April 2021</span>
+                    </div>
+                </div>
+                
+                <!-- Certificate 4 -->
+                <div class="cert-card">
+                    <div class="cert-img">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="C++ Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">C++ Programming</h3>
+                        <span class="cert-org">Udemy</span>
+                        <span class="cert-date">March 2022</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="modal" id="certModal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <img id="modalImage" src="" alt="Certificate">
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2024 Salman Almnaseer. All rights reserved.</p>
+            <p>Designed with ❤️ for your next opportunity</p>
+        </footer>
+    </div>
 
-        <!-- Contact Page -->
-        <article class="contact" data-page="contact" style="display: none">
-          <header>
-            <h2 class="h2 article-title">Contact</h2>
-          </header>
-
-          <section class="mapbox" data-mapbox>
-            <figure>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d228785.36984733588!2d50.077684542968754!3d26.366254755926207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e361d32276b3403%3A0xefd901ec7a5e5676!2sDammam!5e0!3m2!1sen!2ssa!4v1755305473885!5m2!1sen!2ssa"
-                width="100%"
-                height="300"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </figure>
-          </section>
-
-          <section class="contact-form">
-            <h3 class="h3 form-title">Contact Form</h3>
-            <form id="contactForm" class="form" data-form>
-              <div class="input-wrapper">
-                <input
-                  type="text"
-                  name="fullname"
-                  class="form-input"
-                  placeholder="Full name"
-                  required
-                  data-form-input
-                />
-                <input
-                  type="email"
-                  name="email"
-                  class="form-input"
-                  placeholder="Email address"
-                  required
-                  data-form-input
-                />
-              </div>
-              <textarea
-                name="message"
-                class="form-input"
-                placeholder="Your Message"
-                required
-                data-form-input
-              ></textarea>
-              <button class="form-btn" type="submit" data-form-btn>
-                <ion-icon name="paper-plane"></ion-icon>
-                <span>Send Message</span>
-              </button>
-            </form>
-          </section>
-        </article>
-      </div>
-    </main>
-
-    <!-- Custom JS -->
     <script>
-      // Page navigation functionality
-      function showPage(pageId) {
-        // Hide all pages
-        document.querySelectorAll("[data-page]").forEach((page) => {
-          page.style.display = "none";
+        // Certificate modal functionality
+        const modal = document.getElementById('certModal');
+        const modalImg = document.getElementById('modalImage');
+        const closeBtn = document.querySelector('.close-btn');
+        const certCards = document.querySelectorAll('.cert-card');
+        
+        // Open modal when certificate is clicked
+        certCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const imgSrc = card.querySelector('img').src;
+                modalImg.src = imgSrc;
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
         });
-
-        // Show selected page
-        document.querySelector(`[data-page="${pageId}"]`).style.display =
-          "block";
-
-        // Update active nav link
-        document.querySelectorAll("[data-nav-link]").forEach((link) => {
-          link.classList.remove("active");
+        
+        // Close modal
+        closeBtn.addEventListener('click', () => {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto'; // Enable scrolling
         });
-        event.target.classList.add("active");
-      }
-
-      // Contact form submission
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          alert("Thank you for your message! I will get back to you soon.");
-          this.reset();
+        
+        // Close modal when clicking outside the image
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
         });
-
-      // Sidebar toggle functionality
-      const sidebarBtn = document.querySelector("[data-sidebar-btn]");
-      const sidebar = document.querySelector("[data-sidebar]");
-
-      if (sidebarBtn) {
-        sidebarBtn.addEventListener("click", function () {
-          sidebar.classList.toggle("active");
+        
+        // Close modal with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
         });
-      }
-
-      // Project filtering functionality
-      function filterProjects(category) {
-        const projects = document.querySelectorAll("[data-filter-item]");
-
-        projects.forEach((project) => {
-          if (category === "all" || project.dataset.category === category) {
-            project.style.display = "block";
-          } else {
-            project.style.display = "none";
-          }
-        });
-      }
     </script>
-
-    <!-- Ionicons -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+</body>
 </html>
