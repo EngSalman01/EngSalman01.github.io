@@ -354,9 +354,9 @@ main {
 .avatar-box {
   border-radius: 50%;
   overflow: hidden;
-  width: 100px;
+  width: 90px;
   /* Adjust size as needed */
-  height: 100px;
+  height: 90px;
   /* Must match width for perfect circle */
 }
 
